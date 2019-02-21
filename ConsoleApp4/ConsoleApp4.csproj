@@ -42,6 +42,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,17 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bd\AbstrProduct.cs" />
     <Compile Include="Bd\Adresses.cs" />
     <Compile Include="Bd\Building.cs" />
     <Compile Include="Bd\Categories.cs" />
     <Compile Include="Bd\Countries.cs" />
+    <Compile Include="Bd\Orders.cs" />
+    <Compile Include="Bd\Producer.cs" />
+    <Compile Include="Bd\RealProduct.cs" />
     <Compile Include="Bd\Status.cs" />
     <Compile Include="Bd\User.cs" />
+    <Compile Include="Model1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

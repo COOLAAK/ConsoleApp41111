@@ -12,11 +12,12 @@ namespace ConsoleApp4.Bd
         public string Login { get; set; }
 
         public string Password { get; set; }
-        public virtual ICollection<Status> status { get; set; }
+        public virtual Status Status { get; set; }
         public int Age { get; set; }
         public string Email { get; set; }
-        
-        public virtual ICollection<Status> Gender { get; set; }
+
+        public virtual ICollection<Orders> Orders { get; set; }
+        public virtual Status Gender { get; set; }
 
     }
 }

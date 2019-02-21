@@ -12,5 +12,7 @@ namespace ConsoleApp4.Bd
         public string Name { get; set; }
         public string Description { get; set; }
         public bool Legal { get; set; }
+
+        public virtual ICollection<AbstrProduct> AbstrProducts { get; set; }
     }
 }

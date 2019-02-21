@@ -11,6 +11,7 @@ namespace ConsoleApp4.Bd
         public int Id { get; set; }
         public virtual Countries Country { get; set; }
         public virtual Building Building { get; set; }
-
+        public virtual ICollection<Orders> Orders { get; set; }
+        public virtual ICollection<Producer> Producers { get; set; }
     }
 }

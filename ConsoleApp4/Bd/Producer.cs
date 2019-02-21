@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4.Bd
 {
-    public class Building
+    public class Producer
     {
         public int Id { get; set; }
-        public int Number { get; set; }
-        public string Letter { get; set; }
+        public string Name { get; set; }
 
-        public virtual ICollection<Adresses> Adresses { get; set; }
+        public virtual Adresses Adresses { get; set; }
+        public virtual ICollection<RealProduct> RealProducts { get; set; }
     }
 }

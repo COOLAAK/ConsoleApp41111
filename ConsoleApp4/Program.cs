@@ -10,6 +10,11 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+            using (var ctx = new Model1())
+            {
+                Console.WriteLine(ctx.Categories.Count());
+                Console.ReadKey();
+            }
         }
     }
 }

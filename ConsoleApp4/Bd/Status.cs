@@ -10,5 +10,7 @@ namespace ConsoleApp4.Bd
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public virtual ICollection<User> Users { get; set; }
     }
 }

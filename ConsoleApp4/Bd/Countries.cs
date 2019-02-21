@@ -11,6 +11,7 @@ namespace ConsoleApp4.Bd
         public int Id { get; set; }
         public string Name { get; set; }
         public string CityName { get; set; }
-        public string ShortName { get; set; }   
+        public string ShortName { get; set; }
+        public virtual ICollection<Adresses> Adresses { get; set; }
     }
 }
